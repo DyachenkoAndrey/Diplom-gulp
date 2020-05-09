@@ -43,6 +43,7 @@ header {
   background: #fbfbfb;
   margin: 0 auto;
   height: 768px;
+  max-width: 1920px;
 }
 
 .container {
@@ -134,12 +135,13 @@ header {
 .nav-mobile {
   width: 100%;
   height: 100vh;
-  z-index: 150;
+  z-index: 500;
   display: none;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   padding-left: -20px;
+  background-color: #fbfbfb;
 }
 
 .nav-mobile ul {
@@ -336,14 +338,74 @@ header {
 
 /*  ----------- MAIN ----------  */
 
-.main-box {
-  height: 500px;
-  width: 100%;
+.main {
+  max-width: 1920px;
   background-color: #fff;
-  z-index: 111;
 }
 
 /*  ----------- / MAIN ----------  */
+
+.main-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 30px 0 100px 0;
+  margin: 0 auto;
+}
+
+.main-box-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.title {
+  font-weight: bold;
+  font-size: 54px;
+  line-height: 60px;
+}
+
+.main-box-skills {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-top: 85px;
+}
+
+.main-box-skills-box {
+  width: 20%;
+  text-align: center;
+  padding-bottom: 150px;
+}
+
+.main-box-skills-box__icon {
+  padding-bottom: 25px;
+}
+
+.main-box-skills-box__text {
+  padding-bottom: 50px;
+}
+
+.main-box-button {
+  margin: 0 auto;
+}
 
 @media (max-width: 1024px) {
   .header-nav__burger {
@@ -354,10 +416,6 @@ header {
     display: none;
   }
 
-  .header-main-text h1 {
-    font-size: 54px;
-  }
-
   .header-main-photo {
     background-size: 400px;
     background-position: 40% 57%;
@@ -365,17 +423,22 @@ header {
 }
 
 @media (max-width: 687px) {
+  header {
+    max-height: 500px;
+  }
+
   .container {
-    padding: 0 0px 0 0px;
+    padding: 0;
   }
 
   .header-nav {
     height: 80px;
+    padding: 0 20px;
   }
 
   .header-nav__burger img {
-    width: 30px;
-    height: 25px;
+    width: 25px;
+    height: auto;
   }
 
   .header-nav__contact a {
@@ -384,6 +447,8 @@ header {
 
   .header-nav__contact img {
     display: block;
+    width: 25px;
+    height: auto;
   }
 
   .header-nav__contact-btn {
@@ -396,7 +461,7 @@ header {
   }
 
   .header-main {
-    background-position: 10% 50%;
+    background-position: 50% 70%;
   }
 
   .header-main-body {
@@ -404,12 +469,40 @@ header {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    text-align: center;
+    height: 640px;
+  }
+
+  .header-main-text h1 {
+    font-size: 30px;
+  }
+
+  .header-main-text p {
+    font-size: 16px;
+    padding: 0 5px 0 5px;
+  }
+
+  .header-main-text button {
+    margin: 0 auto;
+  }
+
+  .header-main-text {
+    width: 100%;
+    background-color: #fff;
+    padding: 25px 0 50px 0;
   }
 
   .header-main-photo {
     -webkit-box-ordinal-group: 0;
         -ms-flex-order: -1;
             order: -1;
+    width: 100%;
+    background-size: 300px;
+    background-position: 50px 19px;
+  }
+
+  .main-box-skills-box {
+    padding-bottom: 0;
     width: 100%;
   }
 }
@@ -426,6 +519,49 @@ header {
 
   .header-main {
     background-position: 100% 130%;
+  }
+
+  .header-main-text h1 {
+    font-size: 54px;
+  }
+
+  .main-box-skills {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    padding: 45px 0 45px 0;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 687px) {
+  .main-box {
+    padding-bottom: 50px;
+  }
+
+  .main-box-title {
+    padding-top: 200px;
+  }
+
+  .title {
+    font-size: 30px;
+  }
+
+  .main-box-skills {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-top: 30px;
+  }
+}
+
+@media (min-width: 687px) and (max-width: 1024px) {
+  .main-box-skills-box {
+    padding: 0;
+    width: 40%;
+    height: 40%;
   }
 }
 
