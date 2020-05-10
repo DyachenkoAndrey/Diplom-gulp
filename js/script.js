@@ -11,9 +11,12 @@ $(".nav-mobile__close").click(function () {
 
 // Click function for show the Modal
 
-$(".header-nav__contact-btn, .header-main__button").on("click", function () {
-  $(".mask").addClass("active-modal");
-});
+$(".header-nav__contact-btn, .header-main__button, .main-box-button").on(
+  "click",
+  function () {
+    $(".mask").addClass("active-modal");
+  }
+);
 
 // Function for close the Modal
 
