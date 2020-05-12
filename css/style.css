@@ -386,13 +386,13 @@ header {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding-top: 85px;
+  padding: 85px 0 50px;
 }
 
 .main-box-skills-box {
   width: 20%;
   text-align: center;
-  padding-bottom: 150px;
+  padding-bottom: 50px;
 }
 
 .main-box-skills-box__icon {
@@ -584,6 +584,10 @@ header {
 
   .header-main-text h1 {
     font-size: 54px;
+  }
+
+  .main-box button {
+    margin-bottom: 50px;
   }
 
   .title {
