@@ -415,7 +415,7 @@ header {
   width: 100%;
   margin: 0 auto;
   text-align: center;
-  padding: 0 5px 0 5px;
+  padding: 0;
 }
 
 .slider p {
@@ -438,8 +438,7 @@ header {
       -ms-flex-pack: center;
           justify-content: center;
   margin: 0 auto;
-  max-width: 1200px;
-  padding-left: 20px;
+  max-width: 1170px;
 }
 
 .slider__slider-box {
@@ -607,11 +606,6 @@ header {
     padding: 0;
     width: 40%;
     height: 40%;
-  }
-
-  .slider__slider {
-    padding: 10px;
-    width: 75%;
   }
 }
 

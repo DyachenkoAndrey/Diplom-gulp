@@ -12,7 +12,7 @@ $(".nav-mobile__close").click(function () {
 // Click function for show the Modal
 
 $(
-  ".header-nav__contact-btn, .header-main__button, .main-box-button, .slider__button"
+  ".header-nav__contact-btn, .header-main__button, .main-box-button, .slider-btn"
 ).on("click", function () {
   $(".mask").addClass("active-modal");
 });
