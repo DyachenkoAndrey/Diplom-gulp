@@ -450,6 +450,93 @@ header {
   margin: 0 auto;
 }
 
+.price {
+  width: 100%;
+  background: -o-linear-gradient(45deg, #ff8e5a 0%, #ff2f97 100%);
+  background: linear-gradient(45deg, #ff8e5a 0%, #ff2f97 100%);
+  min-height: 320px;
+}
+
+.price-text {
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
+.price-text__title {
+  padding: 100px 20px 0 20px;
+  color: white;
+  font-size: 45px;
+  font-weight: bold;
+}
+
+.price-text__subtitle {
+  padding: 50px 20px 85px 20px;
+  color: white;
+}
+
+.price-flying {
+  position: relative;
+  color: white;
+}
+
+.price-flying__hashtag {
+  -webkit-transform: rotate(35deg);
+      -ms-transform: rotate(35deg);
+          transform: rotate(35deg);
+  position: absolute;
+  left: 3%;
+  top: 40px;
+  font-size: 57px;
+  font-weight: bold;
+}
+
+.price-flying__brackets {
+  -webkit-transform: rotate(25deg);
+      -ms-transform: rotate(25deg);
+          transform: rotate(25deg);
+  position: absolute;
+  left: -5%;
+  top: 260px;
+  font-size: 57px;
+  font-weight: bold;
+}
+
+.price-flying__div {
+  -webkit-transform: translate(-50%, 0);
+      -ms-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
+  -webkit-transform: rotate(15deg);
+      -ms-transform: rotate(15deg);
+          transform: rotate(15deg);
+  position: absolute;
+  left: 80%;
+  top: 210px;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.price-flying__second-div {
+  -webkit-transform: rotate(-15deg);
+      -ms-transform: rotate(-15deg);
+          transform: rotate(-15deg);
+  position: absolute;
+  left: 60%;
+  top: 70px;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.price-flying__slash {
+  -webkit-transform: rotate(-15deg);
+      -ms-transform: rotate(-15deg);
+          transform: rotate(-15deg);
+  position: absolute;
+  left: 10%;
+  top: 230px;
+  font-size: 30px;
+  font-weight: bold;
+}
+
 @media (max-width: 1024px) {
   .header-nav__burger {
     display: block;
@@ -565,6 +652,10 @@ header {
   .slider__button {
     margin: 0;
   }
+
+  .price-flying {
+    display: none;
+  }
 }
 
 @media (min-width: 688px) and (max-width: 1024px) {
@@ -606,6 +697,10 @@ header {
     padding: 0;
     width: 40%;
     height: 40%;
+  }
+
+  .price-flying__div {
+    left: 70%;
   }
 }
 
