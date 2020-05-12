@@ -11,12 +11,11 @@ $(".nav-mobile__close").click(function () {
 
 // Click function for show the Modal
 
-$(".header-nav__contact-btn, .header-main__button, .main-box-button").on(
-  "click",
-  function () {
-    $(".mask").addClass("active-modal");
-  }
-);
+$(
+  ".header-nav__contact-btn, .header-main__button, .main-box-button, .slider__button"
+).on("click", function () {
+  $(".mask").addClass("active-modal");
+});
 
 // Function for close the Modal
 
@@ -49,7 +48,7 @@ $(".regular").slick({
   adaptiveHeight: true,
   responsive: [
     {
-      breakpoint: 1025,
+      breakpoint: 1035,
       settings: {
         slidesToShow: 2,
         slidesToScroll: 1,

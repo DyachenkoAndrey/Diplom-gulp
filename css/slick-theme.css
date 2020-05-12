@@ -114,7 +114,7 @@
   position: absolute;
   bottom: -25px;
   list-style: none;
-  display: block;
+  display: none;
   text-align: center;
   padding: 0;
   margin: 0;
@@ -163,17 +163,17 @@
   width: 20px;
   height: 20px;
   font-family: "slick";
-  font-size: 6px;
+  font-size: 40px;
   line-height: 20px;
   text-align: center;
-  color: black;
+  color: #ff4e2e;
   opacity: 0.25;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 .slick-dots li.slick-active button:before {
-  color: black;
+  color: #ff4e2e;
   opacity: 0.75;
 }
 
@@ -181,5 +181,11 @@
   .slick-prev,
   .slick-next {
     position: static;
+  }
+}
+
+@media (max-width: 687px) {
+  .slick-dots {
+    bottom: 0;
   }
 }
