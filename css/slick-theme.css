@@ -177,15 +177,15 @@
   opacity: 0.75;
 }
 
+@media (min-width: 687px) {
+  .slick-dots {
+    opacity: 0;
+  }
+}
+
 @media (max-width: 1024px) {
   .slick-prev,
   .slick-next {
     position: static;
-  }
-}
-
-@media (max-width: 687px) {
-  .slick-dots {
-    bottom: 0;
   }
 }
