@@ -415,7 +415,7 @@ header {
   width: 100%;
   margin: 0 auto;
   text-align: center;
-  padding: 0;
+  padding: 0 5px 0 5px;
 }
 
 .slider p {
@@ -622,6 +622,7 @@ header {
 
   .title {
     font-size: 30px;
+    padding: 50px 0 0 0;
   }
 
   .main-box-skills {
