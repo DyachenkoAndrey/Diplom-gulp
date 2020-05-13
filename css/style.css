@@ -689,6 +689,18 @@ header {
 }
 
 @media (max-width: 687px) {
+  .button-white {
+    width: 270px;
+    height: 60px;
+    border: none;
+    background-color: #ff4e2e;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+    margin: 50px auto;
+  }
+
   header {
     max-height: 500px;
   }
@@ -787,6 +799,18 @@ header {
 
   .slider__button {
     margin: 0;
+  }
+
+  .price-text__title {
+    font-size: 28px;
+    line-height: 1.8;
+    padding: 50px 20px 0 20px;
+  }
+
+  .price-text__subtitle {
+    font-size: 15px;
+    line-height: 2;
+    padding: 50px 20px;
   }
 
   .price-flying {
