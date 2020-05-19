@@ -100,5 +100,5 @@
 }
 
 .slick-arrow.slick-hidden {
-  display: none;
+  display: block;
 }
