@@ -720,6 +720,16 @@ header {
     background-position: 40% 57%;
   }
 
+  .slider-prev {
+    opacity: 0;
+    width: 0;
+  }
+
+  .slider-next {
+    opacity: 0;
+    width: 0;
+  }
+
   .price {
     padding: 10;
   }
