@@ -159,13 +159,13 @@
 
 @media (max-width: 687px) {
   .slick-dots {
-    bottom: 0;
+    bottom: -15px;
   }
 }
 
 @media (min-width: 688px) and (max-width: 1024px) {
   .slick-dots {
     left: 0;
-    bottom: 0;
+    bottom: -15px;
   }
 }
